@@ -1,0 +1,165 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+  
+#logo-sp-assistencia {
+  width: 125px;
+  height: 112px;
+  margin-top: 5px;
+  margin-left: 35px;
+
+}
+
+nav {
+  height: 115px;
+  width: 100%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  transition: all 0.5s;
+
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ a:hover, a:active {
+  color: #00aeec;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display:none;
+}
+
+@media (max-width: 952px) {
+    #logo-sp-assistencia{
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #00aeec;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:active, a:hover {
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/*Informação do site*/
+
+.caixa {
+    height: 380px;
+    background-color:rgba(0, 174, 236, 0.7);
+    margin-top: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 940px;
+    margin: 0px auto;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-2-col {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.aumenta-letra{
+    font-size: 25px;
+    padding: 7px;
+    
+}
+
+#cel-quebrado{
+    width:400px;
+    margin-left: 55px;
+    margin-top: 15px;
+}
+
+.w-100{
+    width:100%
+}
+
+.checked {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 2px;
+    
+}
+
+
+
+
+
+
+
+
