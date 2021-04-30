@@ -5,120 +5,49 @@
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: 'Rubik', sans-serif;
 }
-  
-#logo-sp-assistencia {
-  width: 125px;
+
+#logo {
+  width: 145px;
   height: 112px;
-  margin-top: 5px;
-  margin-left: 35px;
+}
+
+#nav {
+ background:white;
 
 }
 
-nav {
-  height: 115px;
-  width: 100%;
+.text-black {
+    color: black !important; 
 }
 
-nav ul {
-  float: right;
-  margin-right: 20px;
-  margin-top: 20px;
-  transition: all 0.5s;
-
+a:hover {
+    color: rgba(0, 174, 236, 0.7) !important;
 }
 
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: black;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
- a:hover, a:active {
-  color: #00aeec;
-}
-
-.checkbtn {
-    font-size: 30px;
-    color: black;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display:none;
-}
-
-@media (max-width: 952px) {
-    #logo-sp-assistencia{
-        padding-left: 50px;
-    }
-    nav ul li a {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 850px) {
-
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #00aeec;
-        top: 100px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li {
-        display: block;
-        margin: 50px 0px;
-        line-height: 30px;
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-    a:active, a:hover {
-        background: none;
-        color: white;
-    }
-    #check:checked ~ ul {
-        left: 0;
-    }
+.flex-end {
+    justify-content: flex-end;
 }
 
 /*Informação do site*/
 
 .caixa {
-    height: 380px;
-    background-color:rgba(0, 174, 236, 0.7);
-    margin-top: 10px;
+    height: 428px;
+    background-color:rgb(0, 173, 236);
+    background-image: linear-gradient(to top, rgba(210, 236, 245, 0.7), rgba(0, 174, 236, 0.7));
 }
 
-h1{
-    text-align: center;
+#cellphone {
+    width: 50px;
 }
 
-.container {
-    width: 90%;
-    max-width: 940px;
-    margin: 0px auto;
+.checked {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: 11px;
+    margin-left: 2px;
 }
 
 .d-flex {
@@ -126,34 +55,39 @@ h1{
     flex-wrap: wrap;
 }
 
-.flex-2-col {
+.two-col {
     width: 50%;
     flex-grow: 1;
 }
 
-.aumenta-letra{
-    font-size: 25px;
-    padding: 7px;
-    
+#teste {
+    padding-left: 60px;
 }
 
-#cel-quebrado{
-    width:400px;
-    margin-left: 55px;
-    margin-top: 15px;
+#text-contatos {
+    padding-bottom: 25px;
 }
 
-.w-100{
-    width:100%
+.contact-icons {
+    cursor: pointer;
+    width: 40px;
 }
 
-.checked {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    margin-top: 5px;
-    margin-left: 2px;
-    
+.quebra-linhas {
+    display: block;
+}
+
+#gadgets-quebrados {
+    padding-left: 100px;
+    margin-bottom: 50px;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+ul {
+    margin-left: 25px;
 }
 
 
