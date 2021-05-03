@@ -1,115 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <title>SP Assistência Técnica</title>
-    <link rel="shortcut icon" href="/imagens/logo-sp-assistencia.png" />
 
-    <link rel="stylesheet" href="/css/style.css" />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <title>SP Assistência Técnica</title>
+  <link rel="shortcut icon" href="imagens/cellphone-icon.png" />
 
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 
-  <body>
-    <header>
-      <nav id="nav" class="navbar navbar-expand-md navbar-light">
-        <div class="container">
-          <a href="SP Assistência Técnica" class="navbar-brand">
-            <img
-              src="/imagens/logo-sp-assistencia.png"
-              id="logo"
-              class=""
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#divMenu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="divMenu" class="collapse navbar-collapse flex-end">
-            <ul class="navbar-nav text-black">
-              <li class="nav-item">
-                <a
-                  class="nav-link text-uppercase fw-bold text-black"
-                  href=""
-                  >HOME</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link text-uppercase fw-bold text-black"
-                  href=""
-                  >SERVIÇOS</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link text-uppercase fw-bold text-black"
-                  href=""
-                  >CONTATO</a
-                >
-              </li>
-          </div>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+
+<body>
+  <header>
+    <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-black" style="min-height: 120px; background: black">
+      <div class="container">
+
+        <img src="/imagens/logo.png" id="logo" class="" />
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#divMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="divMenu" class="collapse navbar-collapse flex-end">
+          <ul class="navbar-nav text-black">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fw-bold text-black" href="/index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fw-bold text-black" href="/servicos.html">SERVIÇOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fw-bold text-black" href="/contato.html">CONTATO</a>
+            </li>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-    <section class="caixa container-fluid shadow-sm">
-      <h1 class="text-center pt-2">SP Assistência Técnica<img src="/imagens/cellphone-icon.png" alt="" id="cellphone">
-      </h1>
+  <main>
+    <section class=" banner">
+      <div class="container">
+          <h2 class="senac"> SP Cell
+              <p class=" residencial"> Assistencia técnica</p>
+          </h2>
+          <spam class="slogan"> Seu celular quebrou? Arrume conosco! </spam>
+      </div>
+  </section>
+
+    <section class="caixa container-fluid">
+      <h2 class="text-center pt-3">Porque escolher a gente?<img src="/imagens/cellphone-icon.png" alt="" id="cellphone">
+      </h2>
       <section class="container d-flex">
-        <section id="teste" class="two-col py-4">
-          <ul >
-            <li class="fs-4 pb-1">
-              Manutenção em celulares e tablets (Apple, Nokia,
-              Motorola, Xiaomi, Samsung, LG, Vernee, entre outros)
-              <img src="imagens/checked-icon.png" class="checked"> 
+        <section id="textos-home" class="two-col py-4">
+          <ul>
+            <li class="fs-4 ">
+              Manutenção em celulares e tablets (Apple,
+              Motorola, Xiaomi, Samsung, LG, entre outros)
+              <img src="imagens/checked-icon.png" class="checked">
             </li>
-            <li class="fs-4 pb-1">
+            <li class="fs-4 ">
               Serviço com garantia
-              <img src="imagens/checked-icon.png" class="checked"> 
+              <img src="imagens/checked-icon.png" class="checked">
             </li>
-            <li class="fs-4 pb-1">
+            <li class="fs-4">
               Técnico altamente qualificado e renomado
-              <img src="imagens/checked-icon.png" class="checked"> 
+              <img src="imagens/checked-icon.png" class="checked">
             </li>
           </ul>
-          <spam id="text-contatos" class="fs-4 nav-link text-center">
-             Entre em contato!
-             <span class="quebra-linhas"></span>
-            <img src="/imagens/whatsapp.png" alt="" class="contact-icons">
-            <img src="/imagens/gmail.png" alt="" class="contact-icons">
-          </spam>
         </section>
-        <section class="two-col">
+        <div class="two-col">
           <img src="/imagens/gadgets-quebrados-1.png" alt="" id="gadgets-quebrados">
-        </section>
-       </section>
-
-       
+        </div>
       </section>
-    </main>
-  </body>
+    </section>
+
+    <section class="container-fluid text-center pt-4">
+      <h2>Assistência especializada em produtos Apple <spam class="quebra-linhas"> (Iphones, Apple Watch, Ipad, Ipod)
+        </spam>
+      </h2>
+
+      <img src="/imagens/iphonesxr.jpg" alt="" id="iphones" class="pt-3">
+      <img src="/imagens/apple-watch.jpg" alt="" id="apple-watch" class="mx-3">
+    </section>
+
+    <section class="caixa mt-4">
+      <section class="container d-flex">
+
+        <img src="/imagens/fix-cellphone.jpg" alt="" id="fix-cellphone" class="">
+
+        <section class="two-col mt-5">
+          <h2 class="text-center mt-1">Sobre Nós</h2>
+          <p class=" pt-3 fs-5 mx-3">
+            Com 12 anos de experiência no mercado, o técnico Leandro é altamente especializado em microsoldagem e
+            manutenção de dispositivos eletrônicos.
+          </p>
+          <p class="pt-3 fs-5 mx-3">
+            A SP Assistência Técnica oferece aos seus clientes rapidez e eficiência no seu atendimento, proporcionando
+            serviço leva e traz dos aparelhos (conserto em até 24 horas) e garantia de 3 meses de serviços.
+          </p>
+        </section>
+      </section>
+    </section>
+
+    <footer class="text-white text-center fs-5 " style="background-color: black; margin-top: 30px;">
+      <div class="row">
+        <div class="col">
+          <address class="endereco" style="min-width: 300px;">
+            Endereço: Av. General Carneiro, 727 <br>
+            Vila Marta, Sorocaba - SP<br>
+            18043-004, Brasil
+          </address>
+        </div>
+        <div class=" endereco col text-white ">
+          <span> Telefone :</span>
+          <a href="tel:+55115682-7300" class="text-decoration-none text-white">(15) 99192-2708</a>
+          <div>
+            <a href=" https://pt-br.facebook.com/senacsaopaulo/ "> <img src="/imagens/email-teste-icon.png"></a>
+            <a href=" https://www.instagram.com/senacsantoamaro/?hl=pt-br "> <img src="/imagens/instagram.png"></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=5511958347685&text=Ol%C3%A1%2C%20eu%20vim%20atrav%C3%A9s%20do%20seu%20site.%20Gostaria%20de%20saber%20mais%20sobre%20o%20SENAC%20Residencial.">
+              <img src="/imagens/whatsapp.png"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+
 </html>
