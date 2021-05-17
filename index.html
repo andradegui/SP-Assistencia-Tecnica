@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet" />
+</head>
 
 <body>
   <!--MENU-->
@@ -43,54 +44,59 @@
     </nav>
   </header>
   <!--INFO HOME-->
-  <main class="" >
-
-    <!--SERVIÇOS *obs: colocar mapa entre: sobre nós e serviços*-->
+  <main class="container-fluid">
+    <!--SAIBA TUDO O QUE OFERECEMOS A VOCÊ-->
     <section id="servicos" class="caixa" style="margin-top: 110px!important;">
-      <div class="serviços container-fluid">
+      <div class="container-fluid">
         <div style="width: 100%">
           <h2 class="text-center pt-3">Saiba tudo o que oferecemos a você!</h2>
-
-          <div class=" row ">
-
+          <div class="row">
             <div class="col-3">
-              <img src="/imagens/manutencao-android.png" style="width: 350px ;">
+              <img src="/imagens/manutencao-android.png" style="width: 350px;" class="text-center">
             </div>
             <div class=" col-4 ">
-              <ul class=" fs-5 my-3">
-                <img class="checked" src="/imagens/checked-icon.png">
-                <li class="nav-link mx-2 ">Troca de bateria</li>
-                <img class="checked" src="/imagens/checked-icon.png">
-                <li class="nav-link mx-2">Reparo no conector de carga</li>
-                <img class="checked" src="/imagens/checked-icon.png">
-                <li class="nav-link mx-2">Troca de tela (traseira e frontal)</li>
-                <img class="checked" src="/imagens/checked-icon.png">
-                <li class="nav-link mx-2">Reparo na câmera e flash (traseira e frontal)</li>
-                <img src="/imagens/garantia.jfif" style="width: 25%;">
-                <p><b>todos os nossos serviços contam <br>com garantia de 3 meses</b></p>
+              <ul class=" fs-5">
+
+                <li class="nav-link mx-2 "><img class="checked" src="/imagens/checked-icon.png">Troca de bateria</li>
+
+                <li class="nav-link mx-2"> <img class="checked" src="/imagens/checked-icon.png">Reparo no conector de
+                  carga</li>
+
+                <li class="nav-link mx-2"><img class="checked" src="/imagens/checked-icon.png">Troca de tela (traseira e
+                  frontal)</li>
+
+                <li class="nav-link mx-2"><img class="checked" src="/imagens/checked-icon.png">Reparo na câmera e flash
+                  (traseira e frontal)</li>
               </ul>
+
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="/imagens/garantia.jfif" style="width: 25%;">
+                <p class="text-center fs-5"><b>todos os nossos serviços contam com garantia de 3 meses</b></p>
+              </div>
             </div>
+
             <div class="col-5 fs-5">
               <ul>
-                <img class="checked" src="/imagens/checked-icon.png">
-                <li class="nav-link mx-2">Reparo na touch screen, sensores de vibração, botões
+
+                <li class="nav-link mx-2"><img class="checked" src="/imagens/checked-icon.png">Reparo na touch screen,
+                  sensores de vibração, botões
                   externos ou internos.</li>
-                <img class="checked" src="/imagens/checked-icon.png">
-                <li class="nav-link mx-2">Troca de placa</li>
-                <img class="checked" src="/imagens/checked-icon.png">
-                <li class="nav-link mx-2">Manutenção em Apple watch e outros relógios digitais</li>
-                <img src="/imagens/delivery.png " style="width: 25%;">
-                <p class="text-center"><b>dispomos do sistema leva e traz, <br>entre em
-                    contato para maiores informações</b></p>
+
+                <li class="nav-link mx-2"><img class="checked" src="/imagens/checked-icon.png">Troca de placa</li>
+
+                <li class="nav-link mx-2"><img class="checked" src="/imagens/checked-icon.png">Manutenção em Apple watch
+                  e outros relógios digitais</li>
               </ul>
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="/imagens/delivery.png " style="width: 25%;">
+                <p class="text-center fs-5"><b>dispomos do sistema leva e traz,entre em
+                    contato para maiores informações</b></p>
+              </div>
             </div>
-
           </div>
-
-
         </div>
       </div>
-      <div class=" row text-center my-4">
+      <div class="row text-center my-4">
         <div class="col">
           <button class="btn btn-success mx-3"> chama no Whatsapp</button>
           <span>Ou</span>
@@ -99,7 +105,7 @@
       </div>
     </section>
     <!--ASSIST. ESPECIALIZADA EM IPHONE-->
-    <section class="container-fluid text-center pt-3">
+    <section class="container text-center pt-5">
       <h2>Assistência especializada em produtos Apple <spam class="quebra-linhas"> (Iphones, Apple Watch, Ipad, Ipod)
         </spam>
       </h2>
@@ -108,19 +114,14 @@
       <img src="/imagens/apple-watch.jpg" alt="" id="apple-watch" class="mx-3">
     </section>
     <!--TRABALHAMOS COM AS SEGUINTES MARCAS-->
-    <div id="brand" class=" text-center " style="margin-top: 10px;">
-      <h2 class="pt-3">Trabalhamos com as seguintes marcas</h2>
-      <div>
-        <img src="/imagens/apple.png" style="width: 7%;">
-        <img src="/imagens/samsung.png" style="width: 10%;">
-        <img class="list-inline-item" src="/imagens/xiaomi.png" style="width: 10%;">
-        <img class="list-inline-item" src="imagens/motorola.png" style="width: 8%;">
-        <img class="list-inline-item" src="imagens/Lg.png" style="width: 12%;">
-        <img class="list-inline-item" src="imagens/nokia.png" style="width: 10%;">
-      </div>
-    </div>
+    <section class="text-center pt-5">
+      <h2>Trabalhamos com as seguintes marcas:</h2>
+      <img src="/imagens/marcas.png" alt="" style="width: 55%;">
+
+
+    </section>
     <!--SOBRE NÓS-->
-    <section id="sobre-nos" id="qm-somos" class="caixa mt-5 pb-3" style="margin-top: 110px!important;">
+    <section id="sobre-nos" id="qm-somos" class="caixa pt-5 pb-3" style="margin-top: 10px!important;">
       <section class="container-fluid d-flex">
 
         <img src="/imagens/fix-cellphone.jpg" alt="" id="fix-cellphone" class="">
@@ -139,10 +140,9 @@
       </section>
     </section>
     <!--MAPA-->
-    <section class="container-fluid my-5">
+    <section class="my-5 text-center">
       <div class="row">
-       
-        <div class="col mx-4">
+        <div class="col mx-5">
           <h2 class="mx-4">Como nos encontrar!</h2>
           <map>
             <iframe
@@ -150,13 +150,13 @@
               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></map>
         </div>
         <div class="col">
-          <h2 class="" style="color:green">Avaliações:</h2>
+          <h2>Avaliações:</h2>
           <img src="/imagens/avaliacoes.png" style="width: 70%">
         </div>
       </div>
     </section>
     <!--CONTATO-->
-    <section id="contato" class="caixa" style="margin-top: 350px!important;">
+    <section id="contato" class="caixa">
       <section class="container">
         <!--FORM-->
         <form>
@@ -254,29 +254,21 @@
       </section>
     </section>
   </main>
-
-
-
-  </main>
   <!--RODAPÉ-->
-  <footer id="rodape" class="text-white text-center fs-5 container-fluid" style="background-color: black; margin-top: 30px;">
+  <footer id="rodape" class="text-white text-center fs-5 container-fluid"
+    style="background-color: black; margin-top: 30px;">
     <div class="row pe-0">
       <div class="col">
         <address class="endereco" style="min-width: 300px;">
           Endereço: Av. General Carneiro, 727 <br>
-          Vila Marta, Sorocaba - SP<br>
-          18043-004, Brasil
+          Vila Marta, Sorocaba - SP
         </address>
       </div>
       <div class=" endereco col text-white ">
         <span> Telefone :</span>
         <a href="tel:+55115682-7300" class="text-decoration-none text-white">(15) 99192-2708</a>
         <div>
-          <a href=" https://pt-br.facebook.com/senacsaopaulo/ "> <img src="/imagens/email-teste-icon.png"></a>
-          <a href=" https://www.instagram.com/senacsantoamaro/?hl=pt-br "> <img src="/imagens/instagram.png"></a>
-          <a
-            href="https://api.whatsapp.com/send?phone=5511958347685&text=Ol%C3%A1%2C%20eu%20vim%20atrav%C3%A9s%20do%20seu%20site.%20Gostaria%20de%20saber%20mais%20sobre%20o%20SENAC%20Residencial.">
-            <img src="/imagens/whatsapp.png"></a>
+         
         </div>
       </div>
     </div>
