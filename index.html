@@ -23,67 +23,80 @@
 <body>
   <!--MENU-->
   <header>
-    <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-black" style="min-height: 120px; background: black">
+    <nav class="navbar navbar-expand-md navbar-dark mb-2 fixed-top" style="min-height:80px;">
       <div class="container">
-
-        <img src="/imagens/logo.png" id="logo" class="" />
-        <h1 class="d-none">SP Cell Assistência Técnica</h1>
-
+        <a href="#" class="navbar-brand">
+          <img src="/imagens/logo.png" class="logo-pi" style="width:150px;margin-top: -10px; margin-bottom: -20px;">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#divMenu">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div id="divMenu" class="collapse navbar-collapse flex-end">
-          <ul class="navbar-nav texto-white">
-            <li class="nav-item">
-              <a class="nav-link text-uppercase fw-bold texto-white" href="/index.html">HOME</a>
+        <div id="divMenu" class="collapse navbar-collapse">
+          <ul class=" menu navbar-nav ms-auto ">
+            <li class="nav-item"><a class="nav-link text-white fw-bold" href="#servicos">SERVIÇOS</a></li>
+            <li class="nav-item"><a class="nav-link text-white fw-bold" href="#sobre-nos">SOBRE NÓS</a></li>
+            <li class="nav-item"><a class="nav-link text-white fw-bold" href="#contato">CONTATO</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase fw-bold texto-white" href="/servicos.html">SERVIÇOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase fw-bold texto-white" href="/contato.html">CONTATO</a>
-            </li>
+          </ul>
         </div>
       </div>
     </nav>
   </header>
   <!--INFO HOME-->
-  <main>
-    <!-- BANNER-->
-    <section class="banner" style="margin-top: 30px;">
-      <div class="container">
-          <h2 class="senac"> SP Cell
-              <p class=" residencial"> Assistência técnica</p>
-          </h2>
-          <spam class="slogan"> Seu celular quebrou? Arrume conosco! </spam>
-      </div>
-  </section>
-    <!--PQ ESCOLHER A GENTE-->
-    <section class="caixa container-fluid">
-      <h2 class="text-center pt-3">Porque escolher a gente?<img src="/imagens/cellphone-icon.png" alt="" id="cellphone">
-      </h2>
-      <section class="container d-flex">
-        <section id="textos-home" class="two-col py-4">
-          <ul>
-            <li class="fs-4 ">
-              Manutenção em celulares e tablets (Apple,
-              Motorola, Xiaomi, Samsung, LG, entre outros)
-              <img src="imagens/checked-icon.png" class="checked">
-            </li>
-            <li class="fs-4 ">
-              Serviço com garantia
-              <img src="imagens/checked-icon.png" class="checked">
-            </li>
-            <li class="fs-4">
-              Técnico altamente qualificado e renomado
-              <img src="imagens/checked-icon.png" class="checked">
-            </li>
-          </ul>
-        </section>
-        <div class="two-col">
-          <img src="/imagens/gadgets-quebrados-1.png" alt="" id="gadgets-quebrados">
+  <main class="" >
+
+    <!--SERVIÇOS *obs: colocar mapa entre: sobre nós e serviços*-->
+    <section id="servicos" class="caixa" style="margin-top: 110px!important;">
+      <div class="serviços container-fluid">
+        <div style="width: 100%">
+          <h2 class="text-center pt-3">Saiba tudo o que oferecemos a você!</h2>
+
+          <div class=" row ">
+
+            <div class="col-3">
+              <img src="/imagens/manutencao-android.png" style="width: 350px ;">
+            </div>
+            <div class=" col-4 ">
+              <ul class=" fs-5 my-3">
+                <img class="checked" src="/imagens/checked-icon.png">
+                <li class="nav-link mx-2 ">Troca de bateria</li>
+                <img class="checked" src="/imagens/checked-icon.png">
+                <li class="nav-link mx-2">Reparo no conector de carga</li>
+                <img class="checked" src="/imagens/checked-icon.png">
+                <li class="nav-link mx-2">Troca de tela (traseira e frontal)</li>
+                <img class="checked" src="/imagens/checked-icon.png">
+                <li class="nav-link mx-2">Reparo na câmera e flash (traseira e frontal)</li>
+                <img src="/imagens/garantia.jfif" style="width: 25%;">
+                <p><b>todos os nossos serviços contam <br>com garantia de 3 meses</b></p>
+              </ul>
+            </div>
+            <div class="col-5 fs-5">
+              <ul>
+                <img class="checked" src="/imagens/checked-icon.png">
+                <li class="nav-link mx-2">Reparo na touch screen, sensores de vibração, botões
+                  externos ou internos.</li>
+                <img class="checked" src="/imagens/checked-icon.png">
+                <li class="nav-link mx-2">Troca de placa</li>
+                <img class="checked" src="/imagens/checked-icon.png">
+                <li class="nav-link mx-2">Manutenção em Apple watch e outros relógios digitais</li>
+                <img src="/imagens/delivery.png " style="width: 25%;">
+                <p class="text-center"><b>dispomos do sistema leva e traz, <br>entre em
+                    contato para maiores informações</b></p>
+              </ul>
+            </div>
+
+          </div>
+
+
         </div>
-      </section>
+      </div>
+      <div class=" row text-center my-4">
+        <div class="col">
+          <button class="btn btn-success mx-3"> chama no Whatsapp</button>
+          <span>Ou</span>
+          <button class="btn btn-secondary mx-3">Envia um e-mail</button>
+        </div>
+      </div>
     </section>
     <!--ASSIST. ESPECIALIZADA EM IPHONE-->
     <section class="container-fluid text-center pt-3">
@@ -94,29 +107,160 @@
       <img src="/imagens/iphonesxr.jpg" alt="" id="iphones" class="pt-3">
       <img src="/imagens/apple-watch.jpg" alt="" id="apple-watch" class="mx-3">
     </section>
+    <!--TRABALHAMOS COM AS SEGUINTES MARCAS-->
+    <div id="brand" class=" text-center " style="margin-top: 10px;">
+      <h2 class="pt-3">Trabalhamos com as seguintes marcas</h2>
+      <div>
+        <img src="/imagens/apple.png" style="width: 7%;">
+        <img src="/imagens/samsung.png" style="width: 10%;">
+        <img class="list-inline-item" src="/imagens/xiaomi.png" style="width: 10%;">
+        <img class="list-inline-item" src="imagens/motorola.png" style="width: 8%;">
+        <img class="list-inline-item" src="imagens/Lg.png" style="width: 12%;">
+        <img class="list-inline-item" src="imagens/nokia.png" style="width: 10%;">
+      </div>
+    </div>
     <!--SOBRE NÓS-->
-    <section id="qm-somos" class="caixa2 mt-5 pb-3">
-      <section class="container d-flex">
+    <section id="sobre-nos" id="qm-somos" class="caixa mt-5 pb-3" style="margin-top: 110px!important;">
+      <section class="container-fluid d-flex">
 
         <img src="/imagens/fix-cellphone.jpg" alt="" id="fix-cellphone" class="">
 
         <section id="text-qmSomos" class="two-col mt-5">
           <h2 class="text-center mt-1">Sobre Nós</h2>
-          <p class=" pt-3 fs-5 mx-5">
+          <p class=" pt-3 fs-5">
             Com 12 anos de experiência no mercado, o técnico Leandro é altamente especializado em microsoldagem e
             manutenção de dispositivos eletrônicos.
           </p>
-          <p class="pt-3 fs-5 mx-5">
+          <p class="pt-3 fs-5">
             A SP Assistência Técnica oferece aos seus clientes rapidez e eficiência no seu atendimento, proporcionando
             serviço leva e traz dos aparelhos (conserto em até 24 horas) e garantia de 3 meses de serviços.
           </p>
         </section>
       </section>
     </section>
+    <!--MAPA-->
+    <section class="container-fluid my-5">
+      <div class="row">
+       
+        <div class="col mx-4">
+          <h2 class="mx-4">Como nos encontrar!</h2>
+          <map>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14635.116884981697!2d-47.47532654467933!3d-23.50446043718712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58ac3889f585b%3A0x53011865824e180f!2sSP%20Assist%C3%AAncia%20T%C3%A9cnica%20%26%20Cyber!5e0!3m2!1spt-BR!2sbr!4v1621037347195!5m2!1spt-BR!2sbr"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></map>
+        </div>
+        <div class="col">
+          <h2 class="" style="color:green">Avaliações:</h2>
+          <img src="/imagens/avaliacoes.png" style="width: 70%">
+        </div>
+      </div>
+    </section>
+    <!--CONTATO-->
+    <section id="contato" class="caixa" style="margin-top: 350px!important;">
+      <section class="container">
+        <!--FORM-->
+        <form>
+          <h2 class="text-center pt-3"> Faça seu orçamento online</h2>
+          <p class="text-center"> Aqui podemos fazer seu orçamento totalmente gratuito e sem compromisso, nos
+            daremos um retorno em
+            até um dia útil.</p>
+          <section class="nome" style="margin-bottom: 15px;">
+
+            <div class="row g-2">
+              <div class="col">
+
+                <input type="text" class="form-control" placeholder="Digite seu nome" aria-label="Primeiro nome">
+              </div>
+
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Digite seu sobrenome" aria-label="Ultimo nome">
+              </div>
+            </div>
+          </section>
+
+          <section class="servicos" style="margin-bottom: 15px;">
+
+            <div class="row g-2">
+              <div class="col">
+                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                <select class="form-select" id="inlineFormSelectPref">
+                  <option selected>Selecione o dispositivo </option>
+                  <option value="1">Smartphone</option>
+                  <option value="2">Tablet</option>
+                  <option value="3">Smart-watch</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                <select class="form-select" id="inlineFormSelectPref">
+                  <option selected>Serviço solicitado </option>
+                  <option value="1">Troca do display</option>
+                  <option value="2">Troca do vidro </option>
+                  <option value="3">Troca de bateria </option>
+                  <option value="3">Outros (expecificar) </option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section class="modelo" style="margin-bottom: 15px;">
+
+            <div class="row g-2">
+              <div class="col">
+                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                <select class="form-select" id="inlineFormSelectPref">
+                  <option selected> Marca do aparelho</option>
+                  <option value="1">Apple</option>
+                  <option value="2">Asus</option>
+                  <option value="3">Motorola</option>
+                  <option value="3">LG</option>
+                  <option value="3">Samsung</option>
+                  <option value="3">Xiaomi</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Modelo do aparelho" aria-label="Ultimo nome">
+              </div>
+            </div>
+          </section>
+
+          <section class="contato" style=" margin-bottom:15px;">
+
+            <div class="row g-2">
+              <div class="col">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+              </div>
+
+
+              <div class="col">
+                <input class="form-control" type="tel" placeholder="(11) 9 9999-9999" id="example-tel-input">
+              </div>
+            </div>
+          </section>
+
+          <section class="mensagem" style=" margin-bottom:15px;">
+            <div>
+              <textarea class="form-control" id="exampleFormControlTextarea1"
+                placeholder="Conte para a gente, algo que é importante sabermos..." rows="3"></textarea>
+            </div>
+          </section>
+
+          <div style="text-align: center;">
+            <button type="button" class="btn btn-success">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </section>
   </main>
-   <!--RODAPÉ-->
-  <footer class="text-white text-center fs-5 " style="background-color: black; margin-top: 30px;">
-    <div class="row">
+
+
+
+  </main>
+  <!--RODAPÉ-->
+  <footer id="rodape" class="text-white text-center fs-5 container-fluid" style="background-color: black; margin-top: 30px;">
+    <div class="row pe-0">
       <div class="col">
         <address class="endereco" style="min-width: 300px;">
           Endereço: Av. General Carneiro, 727 <br>
