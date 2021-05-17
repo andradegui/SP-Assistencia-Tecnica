@@ -7,6 +7,10 @@ body {
   font-family: "Rubik", sans-serif !important;
 }
 
+.navbar {
+  background-image: linear-gradient(to bottom, black, white);
+}
+
 #logo {
   width: 250px;
   margin-top: -35px;
@@ -92,11 +96,11 @@ a:hover {
 
 /*Informação do site*/
 .caixa {
-  margin-top: 10px;
   background-image: linear-gradient(
     to top,
     rgba(251, 253, 255, 0.781),
-    rgb(0, 173, 236)
+    rgb(0, 173, 236),
+    white
   );
 }
 
@@ -185,9 +189,6 @@ a:hover {
   color: rgb(0, 173, 236) !important;
 }
 
-.caixa2 {   
-  background-image: linear-gradient(to bottom,
-          rgba(251, 253, 255, 0.781),
-          rgb(0, 173, 236));
+#rodape {
+  background-image: linear-gradient(to top, black, gray);
 }
-
