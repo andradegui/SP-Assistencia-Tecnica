@@ -1,51 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SP Assistência Técnica</title>
+    <link rel="shortcut icon" href="imagens/cellphone-icon.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <title>SP Assistência Técnica</title>
-  <link rel="shortcut icon" href="imagens/cellphone-icon.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="/css/style.css" />
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet" />
-</head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
 
-<body>
-  <!--MENU-->
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark mb-2 fixed-top" style="min-height:80px;">
-      <div class="container">
-        <a href="#" class="navbar-brand">
-          <img src="/imagens/logo.png" class="logo-pi" style="width:150px;margin-top: -10px; margin-bottom: -20px;">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#divMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="divMenu" class="collapse navbar-collapse">
-          <ul class=" menu navbar-nav ms-auto ">
-            <li class="nav-item"><a class="nav-link text-white fw-bold" href="#servicos">SERVIÇOS</a></li>
-            <li class="nav-item"><a class="nav-link text-white fw-bold" href="#sobre-nos">SOBRE NÓS</a></li>
-            <li class="nav-item"><a class="nav-link text-white fw-bold" href="#contato">CONTATO</a>
-            </li>
-          </ul>
+    body {
+      font-family: "Rubik", sans-serif !important;
+    }
+
+    .quebra-linhas {
+      display: block;
+    }
+
+    a:hover {
+      color: rgb(0, 173, 236) !important;
+    }
+
+    .caixa {
+      background-image: linear-gradient(
+        to top,
+        rgba(251, 253, 255, 0.781),
+        rgb(0, 173, 236),
+        white
+      );
+    }
+
+    .full-size {
+      height: calc(80vh - 80px);
+    }
+
+    .background {
+      background-image: url(/imagens/background-qm-somos.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .caixa-transparente {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: black;
+      height: 240px;
+      width: 180px;
+    }
+
+    .endereco img {
+      width: 25px;
+      margin: 10px 5px 0px 5px;
+    }
+
+    .black {
+      background-color: black;
+    }
+  </style>
+
+  <body>
+    <!--MENU-->
+    <header>
+      <nav
+        class="
+          navbar navbar-expand-md navbar-dark
+          mb-2
+          fixed-top
+          text-white
+          black
+        "
+        style="min-height: 80px"
+      >
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img
+              src="/imagens/logo.png"
+              class="logo-pi"
+              style="width: 150px; margin-top: -10px; margin-bottom: -20px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#divMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="divMenu" class="collapse navbar-collapse">
+            <ul class="menu navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="#servicos"
+                  >SERVIÇOS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="#sobre-nos"
+                  >SOBRE NÓS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="#contato"
+                  >CONTATO</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <!--INFO HOME-->
-  <main class="">
-    <!--SAIBA TUDO O QUE OFERECEMOS A VOCÊ-->
+      </nav>
+    </header>
+    <!--INFO HOME-->
+    <main class="">
+      <!--SAIBA TUDO O QUE OFERECEMOS A VOCÊ
     <section id="servicos" class="caixa pt-5" style="margin-top: 110px!important;">
       <div class="container-fluid">
         <div style="width: 100%">
@@ -103,174 +195,219 @@
           <button class="btn btn-secondary mx-3">Envia um e-mail</button>
         </div>
       </div>
-    </section>
-    <!--ASSIST. ESPECIALIZADA EM IPHONE-->
-    <section class="container text-center pt-5">
-      <h2>Assistência especializada em produtos Apple <spam class="quebra-linhas"> (Iphones, Apple Watch, Ipad, Ipod)
-        </spam>
-      </h2>
+    </section>-->
 
-      <img src="/imagens/iphonesxr.jpg" alt="" id="iphones" class="pt-3">
-      <img src="/imagens/apple-watch.jpg" alt="" id="apple-watch" class="mx-3">
-    </section>
-    <!--TRABALHAMOS COM AS SEGUINTES MARCAS-->
-    <section class="text-center pt-5">
-      <h2>Trabalhamos com as seguintes marcas:</h2>
-      <img src="/imagens/marcas.png" alt="" style="width: 55%;">
+      <!--ASSIST. ESPECIALIZADA EM IPHONE-->
+      <section class="container text-center pt-5" style="margin-top: 80px">
+        <h2>
+          Assistência especializada em produtos Apple
+          <spam class="quebra-linhas">
+            (Iphones, Apple Watch, Ipad, Ipod)
+          </spam>
+        </h2>
 
+        <img src="/imagens/iphonesxr.jpg" class="pt-3" style="width: 50%" />
+        <img
+          src="/imagens/apple-watch.jpg"
+          class="mx-3 mt-4"
+          style="width: 20%"
+        />
+      </section>
+      <!--TRABALHAMOS COM AS SEGUINTES MARCAS-->
+      <section class="text-center pt-5">
+        <h2>Trabalhamos com as seguintes marcas:</h2>
+        <img src="/imagens/marcas.png" alt="" style="width: 55%" />
+      </section>
+      <!--SOBRE NÓS-->
+      <section class="full-size background my-5 col-sm">
+        <div class="row mx-5">
+          <div class="col caixa-transparente my-5">
+            <h2 class="text-center mt-1">Sobre Nós</h2>
+            <p class="pt-3 fs-5">
+              Com 12 anos de experiência no mercado, o técnico Leandro é
+              altamente especializado em microsoldagem e manutenção de
+              dispositivos eletrônicos.
+            </p>
+            <p class="pt-3 fs-5">
+              A SP Assistência Técnica oferece aos seus clientes rapidez e
+              eficiência no seu atendimento, proporcionando serviço leva e traz
+              dos aparelhos (conserto em até 24 horas) e garantia de 3 meses de
+              serviços.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--MAPA-->
+      <section class="container text-center">
+        <div class="row">
+          <div class="col">
+            <h2>Como nos encontrar!</h2>
+            <map>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14635.116884981697!2d-47.47532654467933!3d-23.50446043718712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58ac3889f585b%3A0x53011865824e180f!2sSP%20Assist%C3%AAncia%20T%C3%A9cnica%20%26%20Cyber!5e0!3m2!1spt-BR!2sbr!4v1621037347195!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="510px"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe
+            ></map>
+          </div>
+          <div class="col-md">
+            <h2>Avaliações:</h2>
+            <img src="/imagens/avaliacoes.png" />
+          </div>
+        </div>
+      </section>
+      <!--CONTATO-->
+      <section id="contato" class="caixa">
+        <section class="container">
+          <!--FORM-->
+          <form class="mt-5">
+            <h2 class="text-center pt-3">Faça seu orçamento online</h2>
+            <p class="text-center">
+              Aqui podemos fazer seu orçamento totalmente gratuito e sem
+              compromisso, nos daremos um retorno em até um dia útil.
+            </p>
+            <section class="nome" style="margin-bottom: 15px">
+              <div class="row g-2">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Digite seu nome"
+                    aria-label="Primeiro nome"
+                  />
+                </div>
 
-    </section>
-    <!--SOBRE NÓS--> 
-    <section id="sobre-nos" id="qm-somos" class="full-size background pt-5 pb-3 " style="margin-top: 10px!important;">
-      <section class="container-fluid d-flex">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Digite seu sobrenome"
+                    aria-label="Ultimo nome"
+                  />
+                </div>
+              </div>
+            </section>
 
-        <section id="text-qmSomos" class="two-col mt-5 caixa-transparente d-flex justify-content-center align-items-center">
-          <h2 class="text-center mt-1">Sobre Nós</h2>
-          <p class=" pt-3 fs-5">
-            Com 12 anos de experiência no mercado, o técnico Leandro é altamente especializado em microsoldagem e
-            manutenção de dispositivos eletrônicos.
-          </p>
-          <p class="pt-3 fs-5">
-            A SP Assistência Técnica oferece aos seus clientes rapidez e eficiência no seu atendimento, proporcionando
-            serviço leva e traz dos aparelhos (conserto em até 24 horas) e garantia de 3 meses de serviços.
-          </p>
+            <section class="servicos" style="margin-bottom: 15px">
+              <div class="row g-2">
+                <div class="col">
+                  <label class="visually-hidden" for="inlineFormSelectPref"
+                    >Preference</label
+                  >
+                  <select class="form-select" id="inlineFormSelectPref">
+                    <option selected>Selecione o dispositivo</option>
+                    <option value="1">Smartphone</option>
+                    <option value="2">Tablet</option>
+                    <option value="3">Smart-watch</option>
+                  </select>
+                </div>
+
+                <div class="col">
+                  <label class="visually-hidden" for="inlineFormSelectPref"
+                    >Preference</label
+                  >
+                  <select class="form-select" id="inlineFormSelectPref">
+                    <option selected>Serviço solicitado</option>
+                    <option value="1">Troca do display</option>
+                    <option value="2">Troca do vidro</option>
+                    <option value="3">Troca de bateria</option>
+                    <option value="3">Outros (expecificar)</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+
+            <section class="modelo" style="margin-bottom: 15px">
+              <div class="row g-2">
+                <div class="col">
+                  <label class="visually-hidden" for="inlineFormSelectPref"
+                    >Preference</label
+                  >
+                  <select class="form-select" id="inlineFormSelectPref">
+                    <option selected>Marca do aparelho</option>
+                    <option value="1">Apple</option>
+                    <option value="2">Asus</option>
+                    <option value="3">Motorola</option>
+                    <option value="3">LG</option>
+                    <option value="3">Samsung</option>
+                    <option value="3">Xiaomi</option>
+                  </select>
+                </div>
+
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Modelo do aparelho"
+                    aria-label="Ultimo nome"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section class="contato" style="margin-bottom: 15px">
+              <div class="row g-2">
+                <div class="col">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="nome@exemplo.com"
+                  />
+                </div>
+
+                <div class="col">
+                  <input
+                    class="form-control"
+                    type="tel"
+                    placeholder="(11) 9 9999-9999"
+                    id="example-tel-input"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section class="mensagem" style="margin-bottom: 15px">
+              <div>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  placeholder="Conte para a gente, algo que é importante sabermos..."
+                  rows="3"
+                ></textarea>
+              </div>
+            </section>
+
+            <div style="text-align: center">
+              <button type="button" class="btn btn-success">Enviar</button>
+            </div>
+          </form>
         </section>
       </section>
-    </section>
-    <!--MAPA-->
-    <section class="my-5 text-center">
-      <div class="row">
-        <div class="col mx-5">
-          <h2 class="mx-4">Como nos encontrar!</h2>
-          <map>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14635.116884981697!2d-47.47532654467933!3d-23.50446043718712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58ac3889f585b%3A0x53011865824e180f!2sSP%20Assist%C3%AAncia%20T%C3%A9cnica%20%26%20Cyber!5e0!3m2!1spt-BR!2sbr!4v1621037347195!5m2!1spt-BR!2sbr"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></map>
-        </div>
+    </main>
+    <!--RODAPÉ-->
+    <footer
+      class="text-white text-center fs-5 container-fluid black"
+      style="margin-top: 30px; min-height: 108px"
+    >
+      <div class="row pe-0">
         <div class="col">
-          <h2>Avaliações:</h2>
-          <img src="/imagens/avaliacoes.png" style="width: 70%">
+          <address class="endereco" style="min-width: 300px">
+            Endereço: Av. General Carneiro, 727 <br />
+            Vila Marta, Sorocaba - SP
+          </address>
+        </div>
+        <div class="endereco col text-white">
+          <span> Telefone :</span>
+          <a href="tel:+55115682-7300" class="text-decoration-none text-white"
+            >(15) 99192-2708</a
+          >
+          <div></div>
         </div>
       </div>
-    </section>
-    <!--CONTATO--> 
-    <section id="contato" class="caixa">
-      <section class="container">
-        <!--FORM-->
-        <form>
-          <h2 class="text-center pt-3"> Faça seu orçamento online</h2>
-          <p class="text-center"> Aqui podemos fazer seu orçamento totalmente gratuito e sem compromisso, nos
-            daremos um retorno em
-            até um dia útil.</p>
-          <section class="nome" style="margin-bottom: 15px;">
-
-            <div class="row g-2">
-              <div class="col">
-
-                <input type="text" class="form-control" placeholder="Digite seu nome" aria-label="Primeiro nome">
-              </div>
-
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Digite seu sobrenome" aria-label="Ultimo nome">
-              </div>
-            </div>
-          </section>
-
-          <section class="servicos" style="margin-bottom: 15px;">
-
-            <div class="row g-2">
-              <div class="col">
-                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                <select class="form-select" id="inlineFormSelectPref">
-                  <option selected>Selecione o dispositivo </option>
-                  <option value="1">Smartphone</option>
-                  <option value="2">Tablet</option>
-                  <option value="3">Smart-watch</option>
-                </select>
-              </div>
-
-              <div class="col">
-                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                <select class="form-select" id="inlineFormSelectPref">
-                  <option selected>Serviço solicitado </option>
-                  <option value="1">Troca do display</option>
-                  <option value="2">Troca do vidro </option>
-                  <option value="3">Troca de bateria </option>
-                  <option value="3">Outros (expecificar) </option>
-                </select>
-              </div>
-            </div>
-          </section>
-
-          <section class="modelo" style="margin-bottom: 15px;">
-
-            <div class="row g-2">
-              <div class="col">
-                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                <select class="form-select" id="inlineFormSelectPref">
-                  <option selected> Marca do aparelho</option>
-                  <option value="1">Apple</option>
-                  <option value="2">Asus</option>
-                  <option value="3">Motorola</option>
-                  <option value="3">LG</option>
-                  <option value="3">Samsung</option>
-                  <option value="3">Xiaomi</option>
-                </select>
-              </div>
-
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Modelo do aparelho" aria-label="Ultimo nome">
-              </div>
-            </div>
-          </section>
-
-          <section class="contato" style=" margin-bottom:15px;">
-
-            <div class="row g-2">
-              <div class="col">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-              </div>
-
-
-              <div class="col">
-                <input class="form-control" type="tel" placeholder="(11) 9 9999-9999" id="example-tel-input">
-              </div>
-            </div>
-          </section>
-
-          <section class="mensagem" style=" margin-bottom:15px;">
-            <div>
-              <textarea class="form-control" id="exampleFormControlTextarea1"
-                placeholder="Conte para a gente, algo que é importante sabermos..." rows="3"></textarea>
-            </div>
-          </section>
-
-          <div style="text-align: center;">
-            <button type="button" class="btn btn-success">Enviar</button>
-          </div>
-        </form>
-      </section>
-    </section>
-  </main>
-  <!--RODAPÉ-->
-  <footer id="rodape" class="text-white text-center fs-5 container-fluid"
-    style="background-color: black; margin-top: 30px; min-height:108px;">
-    <div class="row pe-0">
-      <div class="col">
-        <address class="endereco" style="min-width: 300px;">
-          Endereço: Av. General Carneiro, 727 <br>
-          Vila Marta, Sorocaba - SP
-        </address>
-      </div>
-      <div class=" endereco col text-white ">
-        <span> Telefone :</span>
-        <a href="tel:+55115682-7300" class="text-decoration-none text-white">(15) 99192-2708</a>
-        <div>
-         
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
